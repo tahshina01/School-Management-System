@@ -1,0 +1,7 @@
+.labelHbox {
+  -fx-background-color: linear-gradient(to bottom, #ff4b2b, #f37335, #fdc830);
+  -fx-background-radius: 10px;
+}
+.color2 {
+  -fx-background-color: linear-gradient(to right, #6bd363, #0d8017);
+}

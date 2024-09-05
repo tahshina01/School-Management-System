@@ -1,0 +1,32 @@
+.anchor {
+  -fx-background-color: linear-gradient(to right, #465c72, #152839);
+}
+
+.grid {
+  -fx-background-color: linear-gradient(to right, #3cb371, #00ff7f);
+}
+
+.vbox {
+  -fx-background-color: linear-gradient(to right, #ffff00, #ffd700);
+}
+
+.heading {
+  -fx-background-color: linear-gradient(to right, #353b3d, #595555);
+  -fx-background-radius: 20px;
+}
+
+.crossButton {
+  -fx-background-color: linear-gradient(to right, #cf5670, #eb2e08);
+  -fx-text-fill: #fff;
+  -fx-font-size: 13px;
+  -fx-font-weight: bold;
+  -fx-padding: 10px;
+  -fx-background-radius: 10px;
+  -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.5), 1, 1, 0, 0);
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+.crossButton:hover {
+  -fx-background-color: linear-gradient(to right, #510202, #fb0606);
+  -fx-effect: dropshadow(three-pass-box, #006400, 10, 0.5, 0, 0);
+}

@@ -1,0 +1,58 @@
+.color {
+  -fx-background-color: #391161;
+}
+.revcolor {
+  -fx-background-color: linear-gradient(to bottom, #ff4b2b, #f37335, #fdc830);
+  -fx-background-radius: 17px;
+}
+.dark {
+  -fx-background-color: linear-gradient(
+    to bottom,
+    #03001e,
+    rgba(140, 0, 143, 0.6),
+    #03001e
+  );
+}
+.darker {
+  -fx-background-color: linear-gradient(
+    to bottom,
+    rgba(140, 0, 160, 0.6),
+    rgba(140, 0, 160, 0.3)
+  );
+}
+.mygridStyle Line {
+  -fx-stroke: rgba(140, 0, 143, 0.9);
+  -fx-stroke-width: 6px;
+}
+.myGridID {
+  -fx-background-color: linear-gradient(to bottom right, #d26591, #b642a6);
+}
+.extracolor {
+  -fx-background-color: linear-gradient(to bottom right, #03001e, #03001e);
+  -fx-background-radius: 17px;
+}
+.button:hover {
+  -fx-background-color: #03001e;
+}
+.button2:hover {
+  -fx-background-color: #fdc830;
+}
+.button:focused {
+  -fx-background-color: #ff4b2b;
+}
+.labelHbox {
+  -fx-background-color: linear-gradient(to bottom, #ff4b2b, #f37335, #fdc830);
+  -fx-background-radius: 10px;
+}
+#menuButton .text {
+  -fx-fill: #fff;
+}
+#menuButton .menu-item .text {
+  -fx-fill: #000;
+}
+#menuButton .arrow {
+  -fx-background-color: #baaaaa;
+}
+#clubMemberEntry {
+  -fx-background-color: linear-gradient(to right, #90ee90, #3cb371);
+}

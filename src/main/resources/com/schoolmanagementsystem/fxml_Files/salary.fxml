@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1000" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolmanagementsystem.controllers.SalaryController">
+   <children>
+      <!--   <fx:include source="home.fxml" />-->
+
+      <BorderPane fx:id="borderpane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+         <stylesheets>
+            <URL value="@../css_Files/home.css" />
+         </stylesheets>
+         <left>
+            <VBox fx:id="vbox" prefHeight="620.0" prefWidth="234.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="71.0" top="26.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleHome" prefHeight="43.0" prefWidth="112.0" text="Home" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" right="25.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="profile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleProfile" prefHeight="43.0" prefWidth="112.0" text="Profile" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" right="25.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <MenuButton fx:id="reg" layoutX="55.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="112.0" text="Register" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#studReg" text="Student" />
+                        <MenuItem mnemonicParsing="false" onAction="#teacherReg" text="Teacher" />
+                        <MenuItem mnemonicParsing="false" onAction="#staffReg" text="Staff" />
+                     </items>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </MenuButton>
+                  <Button fx:id="login" layoutX="55.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleLogin" prefHeight="42.0" prefWidth="112.0" text="Log in" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="result" layoutX="56.0" layoutY="372.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleResult" prefHeight="42.0" prefWidth="112.0" text="Result" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="routine" layoutX="55.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRoutine" prefHeight="42.0" prefWidth="112.0" text="Routine" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="notice" layoutX="56.0" layoutY="489.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleNotice" prefHeight="44.0" prefWidth="109.0" text="Notice" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="club" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClub" prefHeight="44.0" prefWidth="109.0" text="Club" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <ImageView fitHeight="620.0" fitWidth="734.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true" scaleX="1.065" style="-fx-background-color:#b2beb5;" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../image/anotherBg.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </center>
+         <effect>
+            <DropShadow />
+         </effect>
+      </BorderPane>
+
+
+      <StackPane prefHeight="620.0" prefWidth="630">
+         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="749.0" styleClass="anchor" stylesheets="@../css_Files/salary.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+               <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="69.0" layoutY="141.0" prefHeight="150.0" prefWidth="624.0" styleClass="grid" stylesheets="@../css_Files/salary.css">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.79998779296875" minWidth="10.0" prefWidth="155.79998779296875" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.4000244140625" minWidth="10.0" prefWidth="158.20001220703125" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.5999755859375" minWidth="10.0" prefWidth="158.7999755859375" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.00002441406247" minWidth="10.0" prefWidth="148.00002441406247" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints maxHeight="115.19998168945312" minHeight="10.0" prefHeight="93.59998779296875" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="56.80001220703126" minHeight="9.600012207031241" prefHeight="56.80001220703126" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="114.0" text="Base Salary" textFill="#075d8c" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <font>
+                           <Font name="System Bold" size="17.0" />
+                        </font>
+                     </Label>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="114.0" text="House Rent" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="22.0" top="5.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="rentPercentage" alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="156.0" text="35% 0f Base Salary" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="2.0" top="5.0" />
+                              </VBox.margin>
+                           </Label>
+                        </children>
+                     </VBox>
+                     <Label alignment="CENTER" prefHeight="46.0" prefWidth="162.0" text="Medical Allowance" textFill="#075d8c" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <font>
+                           <Font name="System Bold" size="13.0" />
+                        </font>
+                     </Label>
+                     <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="40.0" prefWidth="149.0" text="Child Education" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="13.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets top="5.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="noOfChild" alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="156.0" text="for 2 children" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets />
+                              </VBox.margin>
+                           </Label>
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vbox" stylesheets="@../css_Files/salary.css" GridPane.rowIndex="1">
+                        <children>
+                           <Label fx:id="baseSalary" alignment="CENTER" prefHeight="34.0" prefWidth="109.0" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="baseSalaryInput" alignment="CENTER" onKeyPressed="#handleInvalid">
+                              <font>
+                                 <Font size="15.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" right="10.0" />
+                              </VBox.margin>
+                              <cursor>
+                                 <Cursor fx:constant="HAND" />
+                              </cursor>
+                           </TextField>
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vbox" stylesheets="@../css_Files/salary.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <children>
+                           <Label fx:id="rentAmount" alignment="CENTER" prefHeight="34.0" prefWidth="109.0" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="rentInput" alignment="CENTER" onKeyPressed="#handleInvalid">
+                              <font>
+                                 <Font size="15.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" right="10.0" />
+                              </VBox.margin>
+                              <cursor>
+                                 <Cursor fx:constant="HAND" />
+                              </cursor>
+                           </TextField>
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vbox" stylesheets="@../css_Files/salary.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <children>
+                           <Label fx:id="medical" alignment="CENTER" prefHeight="34.0" prefWidth="109.0" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <TextField fx:id="medicalInput" alignment="CENTER" onKeyPressed="#handleInvalid">
+                              <font>
+                                 <Font size="15.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" right="10.0" />
+                              </VBox.margin>
+                              <cursor>
+                                 <Cursor fx:constant="HAND" />
+                              </cursor>
+                           </TextField>
+                        </children>
+                     </VBox>
+                     <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vbox" stylesheets="@../css_Files/salary.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                        <children>
+                           <Label fx:id="education" alignment="CENTER" prefHeight="34.0" prefWidth="109.0" textFill="#075d8c">
+                              <font>
+                                 <Font name="System Bold" size="15.0" />
+                              </font>
+                           </Label>
+                           <ChoiceBox fx:id="childInput" onMouseClicked="#handleInvalid" prefHeight="30.0" prefWidth="149.0">
+                              <VBox.margin>
+                                 <Insets left="10.0" right="10.0" />
+                              </VBox.margin>
+                              <cursor>
+                                 <Cursor fx:constant="HAND" />
+                              </cursor>
+                           </ChoiceBox>
+                        </children>
+                     </VBox>
+                  </children>
+               </GridPane>
+               <Label alignment="CENTER" layoutX="227.0" layoutY="67.0" prefHeight="58.0" prefWidth="331.0" styleClass="heading" stylesheets="@../css_Files/salary.css" text="Salary Structure" textFill="#310484">
+                  <font>
+                     <Font name="System Bold" size="25.0" />
+                  </font>
+               </Label>
+               <Label fx:id="total" alignment="CENTER" layoutX="227.0" layoutY="342.0" prefHeight="40.0" prefWidth="308.0" text="Total Salary : " textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="20.0" />
+                  </font>
+               </Label>
+               <Label fx:id="receivedDate" alignment="CENTER" layoutX="152.0" layoutY="390.0" prefHeight="40.0" prefWidth="453.0" text="Last received date : " textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="20.0" />
+                  </font>
+               </Label>
+               <DatePicker fx:id="dateInput" layoutX="270.0" layoutY="448.0" maxHeight="31.3" maxWidth="206.5" onAction="#handleInvalid" prefHeight="31.0" prefWidth="206.0" promptText="select date">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </DatePicker>
+               <Button fx:id="update" layoutX="325.0" layoutY="508.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="38.0" prefWidth="110.0" stylesheets="@../css_Files/style.css" text="Update">
+                  <font>
+                     <Font name="System Bold" size="20.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+               <Label fx:id="invalid" alignment="CENTER" layoutX="270.0" layoutY="307.0" prefHeight="40.0" prefWidth="206.0" text="Invalid input" textFill="#990606">
+                  <font>
+                     <Font name="System Bold" size="13.0" />
+                  </font>
+               </Label>
+               <Button fx:id="cross" layoutX="689.0" mnemonicParsing="false" onAction="#handleCross" prefHeight="27.0" prefWidth="59.0" styleClass="crossButton" stylesheets="@../css_Files/salary.css" text="X">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+            </children>
+         </AnchorPane>
+         <StackPane.margin>
+            <Insets left="235" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </StackPane>
+   </children>
+</StackPane>

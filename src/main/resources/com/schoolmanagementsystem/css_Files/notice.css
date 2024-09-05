@@ -1,0 +1,23 @@
+.color {
+  -fx-background-color: linear-gradient(to bottom right, #000000, #434343);
+}
+.revcolor {
+  -fx-background-color: linear-gradient(to bottom, #ff4b2b, #f37335, #fdc830);
+  -fx-background-radius: 17px;
+}
+.dark {
+  -fx-background-color: #414345;
+}
+.hoverClass:hover {
+  -fx-background-color: #24083f;
+}
+.darker {
+  -fx-background-color: #232526;
+}
+.mygridStyle Line {
+  -fx-stroke: #00dbde;
+}
+
+.centeredTextArea .scroll-pane .content .text {
+  -fx-text-alignment: center;
+}

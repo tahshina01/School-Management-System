@@ -1,0 +1,32 @@
+.color {
+  -fx-background-color: linear-gradient(to bottom right, #fc00ff, #00dbde);
+}
+.revcolor {
+  -fx-background-color: linear-gradient(to bottom, #ff4b2b, #f37335, #fdc830);
+  -fx-background-radius: 17px;
+}
+.dark {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    rgba(140, 0, 143, 0.3),
+    rgba(140, 0, 143, 0.3)
+  );
+}
+.darker {
+  -fx-background-color: linear-gradient(
+    to bottom,
+    rgba(140, 0, 160, 0.6),
+    rgba(140, 0, 160, 0.3)
+  );
+}
+/* .mygridStyle Line {
+  -fx-stroke: #00dbde;
+} */
+.extracolor {
+  -fx-background-color: linear-gradient(to bottom right, #ee0979, #ff6a00);
+  -fx-background-radius: 17px;
+}
+
+.extracolor:hover {
+  -fx-background-color: linear-gradient(to bottom right, #fe0505, #832705);
+}

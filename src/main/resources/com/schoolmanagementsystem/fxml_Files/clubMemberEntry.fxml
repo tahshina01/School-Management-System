@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="clubMemberEntry" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="389.0" prefWidth="523.0" style="-fx-background-color: linear-gradient(to right, #465c72, #152839);" styleClass="anchor" stylesheets="@../css_Files/salary.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolmanagementsystem.controllers.ClubMemberEntryController">
+   <children>
+      <Button fx:id="cross" layoutX="508.0" mnemonicParsing="false" onAction="#handleCross" prefHeight="27.0" prefWidth="59.0" styleClass="crossButton" stylesheets="@../css_Files/salary.css" text="X">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <MenuButton id="menuButton" fx:id="selectMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="214.0" layoutY="77.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="168.0" stylesheets="@../css_Files/club.css" text="Add or spend">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleAddFund" text="Add Fund" />
+            <MenuItem mnemonicParsing="false" onAction="#handleSpendFund" text="Spend Fund" />
+         </items>
+         <styleClass>
+            <String fx:value="revcolor" />
+            <String fx:value="button2" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+      <Label fx:id="label" alignment="CENTER" layoutX="74.0" layoutY="159.0" prefHeight="43.0" prefWidth="210.0" text="Enter Student ID :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputField" alignment="CENTER" layoutX="284.0" layoutY="166.0" maxHeight="29.0" maxWidth="197.0" onKeyPressed="#handleInvalid" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <Label fx:id="invalid" alignment="CENTER" layoutX="115.0" layoutY="224.0" maxHeight="30.0" maxWidth="351.0" prefHeight="30.0" prefWidth="351.0" textFill="#c90c0c">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="apply" layoutX="235.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleApply" prefHeight="38.0" prefWidth="110.0" stylesheets="@../css_Files/style.css" text="Apply">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

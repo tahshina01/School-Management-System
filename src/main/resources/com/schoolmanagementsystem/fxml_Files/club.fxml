@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1000"
+   xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="com.schoolmanagementsystem.controllers.ClubController">
+   <children>
+      <!--   <fx:include source="home.fxml" />-->
+
+      <BorderPane fx:id="borderpane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0"
+         prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+         <stylesheets>
+            <URL value="@../css_Files/home.css" />
+         </stylesheets>
+         <left>
+            <VBox fx:id="vbox" prefHeight="620.0" prefWidth="234.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="71.0" top="26.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleHome" prefHeight="43.0" prefWidth="112.0" text="Home" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" right="25.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="profile" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleProfile" prefHeight="43.0" prefWidth="112.0" text="Profile" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" right="25.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <MenuButton fx:id="reg" layoutX="55.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="112.0" text="Register" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#studReg" text="Student" />
+                        <MenuItem mnemonicParsing="false" onAction="#teacherReg" text="Teacher" />
+                        <MenuItem mnemonicParsing="false" onAction="#staffReg" text="Staff" />
+                     </items>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </MenuButton>
+                  <Button fx:id="login" layoutX="55.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleLogin" prefHeight="42.0" prefWidth="112.0" text="Log in" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="result" layoutX="56.0" layoutY="372.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleResult" prefHeight="42.0" prefWidth="112.0" text="Result" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="routine" layoutX="55.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRoutine" prefHeight="42.0" prefWidth="112.0" text="Routine" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="notice" layoutX="56.0" layoutY="489.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleNotice" prefHeight="44.0" prefWidth="109.0" text="Notice" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="club" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClub" prefHeight="44.0" prefWidth="109.0" text="Club" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="61.0" top="7.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <ImageView fitHeight="620.0" fitWidth="734.0" layoutX="25.0" pickOnBounds="true"
+               preserveRatio="true" scaleX="1.065" style="-fx-background-color:#b2beb5;"
+               BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../image/anotherBg.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </center>
+         <effect>
+            <DropShadow />
+         </effect>
+      </BorderPane>
+
+
+      <StackPane prefHeight="620.0" prefWidth="630">
+
+         <AnchorPane fx:id="clubPage" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="728.0"
+            styleClass="color" stylesheets="@../css_Files/club.css"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+               <HBox layoutX="7.0" layoutY="4.0" prefHeight="46.0" prefWidth="714.0">
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0"
+                        prefWidth="714.0" style="-fx-background-radius: 30;" styleClass="dark"
+                        stylesheets="@../css_Files/club.css" text="CLUBS" textAlignment="CENTER"
+                        textFill="WHITE">
+                        <font>
+                           <Font name="Cambria Bold" size="41.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+                  <center>
+                     <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="never"
+                        styleClass="color" stylesheets="@../css_Files/club.css" vbarPolicy="never">
+                        <content>
+
+                           <HBox layoutX="4.0" layoutY="62.0" prefHeight="57.0" prefWidth="721.0"
+                              styleClass="color" stylesheets="@../css_Files/club.css">
+                              <children>
+                                 <Button fx:id="club_1" minHeight="56.0" minWidth="121.0"
+                                    mnemonicParsing="false" onAction="#handleClub_1"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font size="15.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <HBox.margin>
+                                       <Insets left="3.0" />
+                                    </HBox.margin>
+                                 </Button>
+                                 <Button fx:id="club_2" minHeight="56.0" minWidth="120.0"
+                                    mnemonicParsing="false" onAction="#handleClub_2"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font size="15.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_3" minHeight="56.0" minWidth="120.0"
+                                    mnemonicParsing="false" onAction="#handleClub_3"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font size="15.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_4" minHeight="56.0" minWidth="120.0"
+                                    mnemonicParsing="false" onAction="#handleClub_4"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font size="15.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_5" minHeight="56.0" minWidth="120.0"
+                                    mnemonicParsing="false" onAction="#handleClub_5"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_6" minHeight="56.0" minWidth="120.0"
+                                    mnemonicParsing="false" onAction="#handleClub_6"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_7" minHeight="56.0" minWidth="121.0"
+                                    mnemonicParsing="false" onAction="#handleClub_7"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_8" minHeight="56.0" minWidth="121.0"
+                                    mnemonicParsing="false" onAction="#handleClub_8"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_9" minHeight="56.0" minWidth="121.0"
+                                    mnemonicParsing="false" onAction="#handleClub_9"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_10" minHeight="56.0" minWidth="121.0"
+                                    mnemonicParsing="false" onAction="#handleClub_10"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_11" minHeight="56.0" minWidth="121.0"
+                                    mnemonicParsing="false" onAction="#handleClub_11"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="club_12" minHeight="56.0" minWidth="121.0"
+                                    mnemonicParsing="false" onAction="#handleClub_12"
+                                    prefHeight="56.0" prefWidth="121.0"
+                                    style="-fx-background-radius: 30;"
+                                    stylesheets="@../css_Files/club.css" textFill="WHITE">
+                                    <font>
+                                       <Font name="Cambria Bold" size="17.0" />
+                                    </font>
+                                    <styleClass>
+                                       <String fx:value="dark" />
+                                       <String fx:value="button" />
+                                    </styleClass>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                              </children>
+                           </HBox>
+                        </content>
+                        <BorderPane.margin>
+                           <Insets top="60.0" />
+                        </BorderPane.margin>
+
+                     </ScrollPane>
+
+                  </center>
+               </BorderPane>
+               <VBox layoutX="10.0" layoutY="176.0" prefHeight="417.0" prefWidth="708.0"
+                  styleClass="extracolor" stylesheets="@../css_Files/club.css">
+                  <children>
+                     <GridPane gridLinesVisible="true" prefHeight="417.0" prefWidth="698.0"
+                        styleClass="mygridStyle" stylesheets="@../css_Files/club.css">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0"
+                              prefWidth="239.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="469.0" minWidth="10.0"
+                              prefWidth="469.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                           <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0"
+                              prefWidth="235.0" stylesheets="@../css_Files/club.css"
+                              text="ASSISTANT GS" textAlignment="CENTER" textFill="WHITE"
+                              GridPane.rowIndex="5">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="14.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="VICE PRESIDENT"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="52.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="CLUB MODERATOR"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="4">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="52.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="TREASURER"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="3">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="52.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="GENERAL SECRETARY"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="204.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="EXECUTIVE"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="10">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="204.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="EXECUTIVE"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="8">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="204.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="EXECUTIVE"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="9">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="204.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="SECRETARY"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="7">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="204.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="PUBLIC RELATIONS"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="6">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="48.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="PRESIDENT"
+                              textAlignment="CENTER" textFill="WHITE">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0"
+                              layoutY="13.0" prefHeight="25.0" prefWidth="235.0"
+                              stylesheets="@../css_Files/club.css" text="FUND"
+                              textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="11">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="president" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="10.0" layoutY="190.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="vicePresident" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="13.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="generalSecretary" alignment="CENTER"
+                              contentDisplay="CENTER" layoutX="249.0" layoutY="48.0"
+                              prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="assistantGS" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="83.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="treasurer" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="83.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="clubModerator" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="83.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="fundAmount" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="188.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="executive_3" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="188.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="executive_2" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="188.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="executive_1" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="188.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="secretary" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="83.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="publicRelations" alignment="CENTER" contentDisplay="CENTER"
+                              layoutX="249.0" layoutY="83.0" prefHeight="29.0" prefWidth="465.0"
+                              stylesheets="@../css_Files/club.css" textAlignment="CENTER"
+                              textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </GridPane>
+                  </children>
+               </VBox>
+               <HBox layoutX="14.0" layoutY="126.0" prefHeight="39.0" prefWidth="699.0">
+                  <children>
+                     <Button fx:id="addClub" mnemonicParsing="false" onAction="#handleAddClub"
+                        prefHeight="39.0" prefWidth="106.0" stylesheets="@../css_Files/club.css"
+                        text="Add new Club">
+                        <font>
+                           <Font size="12.0" />
+                        </font>
+                        <styleClass>
+                           <String fx:value="revcolor" />
+                           <String fx:value="button2" />
+                        </styleClass>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Button fx:id="updateClub" mnemonicParsing="false" onAction="#handleUpdateClub"
+                        prefHeight="39.0" prefWidth="94.0" stylesheets="@../css_Files/club.css"
+                        text="Update Club">
+                        <font>
+                           <Font size="12.0" />
+                        </font>
+                        <styleClass>
+                           <String fx:value="revcolor" />
+                           <String fx:value="button2" />
+                        </styleClass>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Button fx:id="addMember" mnemonicParsing="false" onAction="#handleAddMember"
+                        prefHeight="39.0" prefWidth="98.0" stylesheets="@../css_Files/club.css"
+                        text="Add Member">
+                        <font>
+                           <Font size="12.0" />
+                        </font>
+                        <styleClass>
+                           <String fx:value="revcolor" />
+                           <String fx:value="button2" />
+                        </styleClass>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Button fx:id="allMembers" mnemonicParsing="false" onAction="#handleAllMembers"
+                        prefHeight="39.0" prefWidth="98.0" stylesheets="@../css_Files/club.css"
+                        text="All Members">
+                        <font>
+                           <Font size="12.0" />
+                        </font>
+                        <styleClass>
+                           <String fx:value="revcolor" />
+                           <String fx:value="button2" />
+                        </styleClass>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Button fx:id="deleteMember" mnemonicParsing="false"
+                        onAction="#handleDeleteMember" prefHeight="39.0" prefWidth="112.0"
+                        stylesheets="@../css_Files/club.css" text="Delete Member">
+                        <font>
+                           <Font size="12.0" />
+                        </font>
+                        <styleClass>
+                           <String fx:value="revcolor" />
+                           <String fx:value="button2" />
+                        </styleClass>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Button fx:id="fund" mnemonicParsing="false" onAction="#handleFund"
+                        prefHeight="39.0" prefWidth="94.0" stylesheets="@../css_Files/club.css"
+                        text="Fund">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                        <styleClass>
+                           <String fx:value="revcolor" />
+                           <String fx:value="button2" />
+                        </styleClass>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                     <Button fx:id="deleteClub" mnemonicParsing="false" onAction="#handleDeleteClub"
+                        prefHeight="39.0" prefWidth="97.0" stylesheets="@../css_Files/club.css"
+                        text="Delete Club">
+                        <font>
+                           <Font size="12.0" />
+                        </font>
+                        <styleClass>
+                           <String fx:value="revcolor" />
+                           <String fx:value="button2" />
+                        </styleClass>
+                        <cursor>
+                           <Cursor fx:constant="HAND" />
+                        </cursor>
+                     </Button>
+                  </children>
+               </HBox>
+            </children>
+         </AnchorPane>
+
+         <StackPane.margin>
+            <Insets left="235" top="-5" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+
+      </StackPane>
+   </children>
+</StackPane>
